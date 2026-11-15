@@ -147,7 +147,7 @@ export function PrizeShowcase() {
 
 
           <h3 className="mt-4 font-serif text-4xl sm:text-5xl">
-            And there's more...
+            And there&apos;s more...
           </h3>
 
 

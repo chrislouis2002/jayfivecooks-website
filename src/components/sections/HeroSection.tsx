@@ -11,7 +11,7 @@ export function HeroSection() {
           <div className="mx-auto max-w-6xl">
             <Link href="/" className="inline-block">
               <span className="block font-serif text-2xl tracking-[0.08em]">
-                NOSATAH'S
+                NOSATAH&apos;S
               </span>
               <span className="mt-2 block text-[10px] font-semibold tracking-[0.35em] text-[#c9b9c2]">
                 SCHOOL OF CREATIVITY

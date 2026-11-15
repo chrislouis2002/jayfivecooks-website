@@ -36,7 +36,7 @@ export function Footer() {
 
               <p className="mt-5 max-w-sm text-sm leading-7 text-white/50">
                 Creating, teaching and inspiring through AI, food and
-                creativity. Let's bring your next big idea to life.
+                creativity. Let&apos;s bring your next big idea to life.
               </p>
 
 
@@ -49,7 +49,7 @@ export function Footer() {
             {/* CONTACT */}
             <div>
               <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-[#EBAFC5]">
-                Let's talk
+                Let&apos;s talk
               </h3>
 
 

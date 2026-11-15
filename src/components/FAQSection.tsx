@@ -69,7 +69,7 @@ export function FAQSection() {
 
           <p className="mt-6 max-w-sm text-base leading-8 text-[#8a707b]">
             Everything you need to know about learning, creating and working
-            together. Can't find what you're looking for? Get in touch.
+            together. Can&apos;t find what you&apos;re looking for? Get in touch.
           </p>
 
 
