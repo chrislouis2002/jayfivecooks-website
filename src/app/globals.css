@@ -11,3 +11,40 @@
   }
 }
 
+
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+:root {
+  --font-sans: var(--font-inter);
+}
+
+
+.font-serif {
+  font-family: var(--font-serif), Georgia, serif;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  margin: 0;
+}

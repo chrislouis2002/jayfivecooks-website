@@ -1,205 +1,172 @@
+
+
 import Link from "next/link";
-import Image from "next/image";
 import React from "react";
 import { Container } from "@/components/Container";
 
+
 export function Footer() {
-  const navigation = ["Product", "Features", "Pricing", "Company", "Blog"];
-  const legal = ["Terms", "Privacy", "Legal"];
+  // REPLACE THESE WITH HER REAL DETAILS
+  const whatsappNumber = "234XXXXXXXXXX";
+  const instagramUrl = "https://instagram.com/YOUR_USERNAME";
+  const tiktokUrl = "https://tiktok.com/@YOUR_USERNAME";
+
+
+  const whatsappLink = `https://wa.me/${whatsappNumber}`;
+
+
   return (
-    <div className="relative">
+    <footer className="relative overflow-hidden bg-[#100D11] text-white">
       <Container>
-        <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-10 mx-auto mt-5 border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-5">
-          <div className="lg:col-span-2">
+        <div className="mx-auto max-w-screen-xl border-t border-white/10 py-16 sm:py-20">
+
+
+          <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr]">
+
+
+            {/* BRAND */}
             <div>
-              {" "}
               <Link
                 href="/"
-                className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100"
+                className="font-serif text-3xl font-semibold tracking-wide text-[#EBAFC5]"
               >
-                <Image
-                  src="/img/logo.svg"
-                  alt="N"
-                  width="32"
-                  height="32"
-                  className="w-8"
-                />
-                <span>Nextly</span>
+                JAYFIVECOOKS<span className="text-white">.</span>
               </Link>
+
+
+              <p className="mt-5 max-w-sm text-sm leading-7 text-white/50">
+                Creating, teaching and inspiring through AI, food and
+                creativity. Let's bring your next big idea to life.
+              </p>
+
+
+              <p className="mt-6 text-xs uppercase tracking-[0.2em] text-[#EBAFC5]/70">
+                Learn · Create · Inspire
+              </p>
             </div>
 
-            <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
-              Nextly is a free landing page & marketing website template for
-              startups and indie projects. Its built with Next.js & TailwindCSS.
-              And its completely open-source.
-            </div>
 
-            <div className="mt-5">
+            {/* CONTACT */}
+            <div>
+              <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-[#EBAFC5]">
+                Let's talk
+              </h3>
+
+
+              <p className="mt-5 text-sm leading-7 text-white/50">
+                Have a question about classes, collaborations or working
+                together? Send a message directly on WhatsApp.
+              </p>
+
+
               <a
-                href="https://vercel.com/?utm_source=web3templates&utm_campaign=oss"
+                href="https://wa.me/2348124581257"
                 target="_blank"
-                rel="noopener"
-                className="relative block w-44"
+                rel="noopener noreferrer"
+                className="mt-6 inline-flex items-center gap-3 border border-[#EBAFC5]/40 bg-[#EBAFC5] px-6 py-4 text-xs font-bold uppercase tracking-wider text-[#542638] transition-all duration-300 hover:bg-white hover:border-white"
               >
-                <Image
-                  src="/img/vercel.svg"
-                  alt="Powered by Vercel"
-                  width="212"
-                  height="44"
-                />
-              </a>
-            </div>
-          </div>
-
-          <div>
-            <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
-              {navigation.map((item, index) => (
-                <Link
-                  key={index}
-                  href="/"
-                  className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
+                {/* WhatsApp icon */}
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="h-5 w-5"
+                  aria-hidden="true"
                 >
-                  {item}
-                </Link>
-              ))}
-            </div>
-          </div>
-          <div>
-            <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
-              {legal.map((item, index) => (
-                <Link
-                  key={index}
-                  href="/"
-                  className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
-                >
-                  {item}
-                </Link>
-              ))}
-            </div>
-          </div>
-          <div className="">
-            <div>Follow us</div>
-            <div className="flex mt-5 space-x-5 text-gray-400 dark:text-gray-500">
-              <a
-                href="https://twitter.com/web3templates"
-                target="_blank"
-                rel="noopener"
-              >
-                <span className="sr-only">Twitter</span>
-                <Twitter />
-              </a>
-              <a
-                href="https://facebook.com/web3templates"
-                target="_blank"
-                rel="noopener"
-              >
-                <span className="sr-only">Facebook</span>
-                <Facebook />
-              </a>
-              <a
-                href="https://instagram.com/web3templates"
-                target="_blank"
-                rel="noopener"
-              >
-                <span className="sr-only">Instagram</span>
-                <Instagram />
-              </a>
-              <a href="https://linkedin.com/" target="_blank" rel="noopener">
-                <span className="sr-only">Linkedin</span>
-                <Linkedin />
-              </a>
-            </div>
-          </div>
-        </div>
+                  <path d="M20.52 3.48A11.86 11.86 0 0 0 12.05 0C5.48 0 .13 5.35.13 11.92c0 2.1.55 4.15 1.6 5.96L.03 24l6.28-1.65a11.9 11.9 0 0 0 5.73 1.46h.01c6.57 0 11.92-5.35 11.92-11.92 0-3.18-1.24-6.17-3.45-8.41ZM12.05 21.8a9.86 9.86 0 0 1-5.02-1.37l-.36-.21-3.73.98.99-3.64-.24-.37a9.84 9.84 0 0 1-1.51-5.27c0-5.46 4.45-9.91 9.92-9.91a9.84 9.84 0 0 1 7.01 2.91 9.85 9.85 0 0 1 2.9 7.02c0 5.46-4.45 9.91-9.96 9.91Zm5.44-7.42c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.21 5.09 4.5.71.3 1.27.49 1.7.63.72.23 1.37.2 1.88.12.58-.09 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35Z" />
+                </svg>
 
-        <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
-          Copyright © {new Date().getFullYear()}. Made with ♥ by{" "}
-          <a href="https://web3templates.com/" target="_blank" rel="noopener">
-            Web3Templates.
-          </a>{" "}
-          Illustrations from{" "}
-          <a href="https://www.glazestock.com/" target="_blank" rel="noopener ">
-            Glazestock
-          </a>
+
+                <span>Chat on WhatsApp</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+
+
+              <p className="mt-3 text-xs text-white/40">
+                +234 812 458 1257
+              </p>
+            </div>
+
+
+            {/* SOCIAL MEDIA */}
+            <div>
+              <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-[#EBAFC5]">
+                Follow the journey
+              </h3>
+
+
+              <p className="mt-5 text-sm leading-7 text-white/50">
+                Stay connected for creative inspiration, AI tutorials
+                and behind-the-scenes content.
+              </p>
+
+
+              <div className="mt-7 flex items-center gap-4">
+
+
+                {/* Instagram */}
+                <a
+                  href="https://www.instagram.com/jayfivecooks?rpxt=ZHFoYzhieXB1aTRu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                  className="flex h-12 w-12 items-center justify-center border border-white/15 text-white/70 transition-all duration-300 hover:border-[#EBAFC5] hover:bg-[#EBAFC5] hover:text-[#542638]"
+                >
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" className="h-5 w-5">
+                    <rect x="3" y="3" width="18" height="18" rx="5" />
+                    <circle cx="12" cy="12" r="4" />
+                    <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+                  </svg>
+                </a>
+
+
+                {/* TikTok */}
+                <a
+                  href="https://www.tiktok.com/@jayfivecooks?_r=1&_t=ZS-9BQogPLoDJa"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="TikTok"
+                  className="flex h-12 w-12 items-center justify-center border border-white/15 text-white/70 transition-all duration-300 hover:border-[#EBAFC5] hover:bg-[#EBAFC5] hover:text-[#542638]"
+                >
+                  <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
+                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.56v13.67a2.9 2.9 0 0 1-2.9 2.9 2.9 2.9 0 1 1 2.9-2.9c0-.22-.02-.44-.07-.65v-3.62a6.46 6.46 0 1 0 3.63 5.8V9.9a8.37 8.37 0 0 0 4.9 1.57V7.9a4.85 4.85 0 0 1-1.13-.21Z" />
+                  </svg>
+                </a>
+
+
+                {/* WhatsApp */}
+                <a
+                  href= "https://wa.me/2348124581257"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="WhatsApp"
+                  className="flex h-12 w-12 items-center justify-center border border-white/15 text-white/70 transition-all duration-300 hover:border-[#EBAFC5] hover:bg-[#EBAFC5] hover:text-[#542638]"
+                >
+                  <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
+                    <path d="M20.52 3.48A11.86 11.86 0 0 0 12.05 0C5.48 0 .13 5.35.13 11.92c0 2.1.55 4.15 1.6 5.96L.03 24l6.28-1.65a11.9 11.9 0 0 0 5.73 1.46h.01c6.57 0 11.92-5.35 11.92-11.92 0-3.18-1.24-6.17-3.45-8.41ZM12.05 21.8a9.86 9.86 0 0 1-5.02-1.37l-.36-.21-3.73.98.99-3.64-.24-.37a9.84 9.84 0 0 1-1.51-5.27c0-5.46 4.45-9.91 9.92-9.91a9.84 9.84 0 0 1 7.01 2.91 9.85 9.85 0 0 1 2.9 7.02c0 5.46-4.45 9.91-9.96 9.91Z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+          {/* COPYRIGHT */}
+          <div className="mt-16 border-t border-white/10 pt-7 text-center">
+            <p className="text-xs tracking-wide text-white/40">
+              © {new Date().getFullYear()} JAYFIVECOOKS. All rights reserved.
+            </p>
+            <p className="mt-2 text-xs text-white/30">
+              Made with creativity and love.
+            </p>
+          </div>
+
+
         </div>
       </Container>
-      {/* Do not remove this */}
-      <Backlink />
-    </div>
+    </footer>
   );
 }
 
-const Twitter = ({ size = 24 }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={size}
-    height={size}
-    viewBox="0 0 24 24"
-    fill="currentColor"
-  >
-    <path d="M24 4.37a9.6 9.6 0 0 1-2.83.8 5.04 5.04 0 0 0 2.17-2.8c-.95.58-2 1-3.13 1.22A4.86 4.86 0 0 0 16.61 2a4.99 4.99 0 0 0-4.79 6.2A13.87 13.87 0 0 1 1.67 2.92 5.12 5.12 0 0 0 3.2 9.67a4.82 4.82 0 0 1-2.23-.64v.07c0 2.44 1.7 4.48 3.95 4.95a4.84 4.84 0 0 1-2.22.08c.63 2.01 2.45 3.47 4.6 3.51A9.72 9.72 0 0 1 0 19.74 13.68 13.68 0 0 0 7.55 22c9.06 0 14-7.7 14-14.37v-.65c.96-.71 1.79-1.6 2.45-2.61z" />
-  </svg>
-);
 
-const Facebook = ({ size = 24 }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={size}
-    height={size}
-    viewBox="0 0 24 24"
-    fill="currentColor"
-  >
-    <path d="M24 12.07C24 5.41 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.8-4.7 4.54-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.5c-1.5 0-1.96.93-1.96 1.89v2.26h3.32l-.53 3.5h-2.8V24C19.62 23.1 24 18.1 24 12.07" />
-  </svg>
-);
-const Instagram = ({ size = 24 }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={size}
-    height={size}
-    viewBox="0 0 24 24"
-    fill="currentColor"
-  >
-    <path d="M16.98 0a6.9 6.9 0 0 1 5.08 1.98A6.94 6.94 0 0 1 24 7.02v9.96c0 2.08-.68 3.87-1.98 5.13A7.14 7.14 0 0 1 16.94 24H7.06a7.06 7.06 0 0 1-5.03-1.89A6.96 6.96 0 0 1 0 16.94V7.02C0 2.8 2.8 0 7.02 0h9.96zm.05 2.23H7.06c-1.45 0-2.7.43-3.53 1.25a4.82 4.82 0 0 0-1.3 3.54v9.92c0 1.5.43 2.7 1.3 3.58a5 5 0 0 0 3.53 1.25h9.88a5 5 0 0 0 3.53-1.25 4.73 4.73 0 0 0 1.4-3.54V7.02a5 5 0 0 0-1.3-3.49 4.82 4.82 0 0 0-3.54-1.3zM12 5.76c3.39 0 6.2 2.8 6.2 6.2a6.2 6.2 0 0 1-12.4 0 6.2 6.2 0 0 1 6.2-6.2zm0 2.22a3.99 3.99 0 0 0-3.97 3.97A3.99 3.99 0 0 0 12 15.92a3.99 3.99 0 0 0 3.97-3.97A3.99 3.99 0 0 0 12 7.98zm6.44-3.77a1.4 1.4 0 1 1 0 2.8 1.4 1.4 0 0 1 0-2.8z" />
-  </svg>
-);
+export default Footer;
 
-const Linkedin = ({ size = 24 }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={size}
-    height={size}
-    viewBox="0 0 24 24"
-    fill="currentColor"
-  >
-    <path d="M22.23 0H1.77C.8 0 0 .77 0 1.72v20.56C0 23.23.8 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.2 0 22.23 0zM7.27 20.1H3.65V9.24h3.62V20.1zM5.47 7.76h-.03c-1.22 0-2-.83-2-1.87 0-1.06.8-1.87 2.05-1.87 1.24 0 2 .8 2.02 1.87 0 1.04-.78 1.87-2.05 1.87zM20.34 20.1h-3.63v-5.8c0-1.45-.52-2.45-1.83-2.45-1 0-1.6.67-1.87 1.32-.1.23-.11.55-.11.88v6.05H9.28s.05-9.82 0-10.84h3.63v1.54a3.6 3.6 0 0 1 3.26-1.8c2.39 0 4.18 1.56 4.18 4.89v6.21z" />
-  </svg>
-);
-
-const Backlink = () => {
-  return (
-    <a
-      href="https://web3templates.com"
-      target="_blank"
-      rel="noopener"
-      className="absolute flex px-3 py-1 space-x-2 text-sm font-semibold text-gray-900 bg-white border border-gray-300 rounded shadow-sm place-items-center left-5 bottom-5 dark:bg-trueGray-900 dark:border-trueGray-700 dark:text-trueGray-300"
-    >
-      <svg
-        width="20"
-        height="20"
-        viewBox="0 0 30 30"
-        fill="none"
-        className="w-4 h-4"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect width="30" height="29.5385" rx="2.76923" fill="#362F78" />
-        <path
-          d="M10.14 21.94H12.24L15.44 12.18L18.64 21.94H20.74L24.88 8H22.64L19.58 18.68L16.36 8.78H14.52L11.32 18.68L8.24 8H6L10.14 21.94Z"
-          fill="#F7FAFC"
-        />
-      </svg>
-
-      <span>Web3Templates</span>
-    </a>
-  );
-};
