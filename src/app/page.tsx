@@ -3,12 +3,15 @@ import { VideoShowcase } from "@/components/sections/VideoShowcase";
 import { PrizeShowcase } from "@/components/sections/PrizeShowcase";
 import { TestimonialsSection } from "@/components/sections/TestimonialSection";
 import FAQSection from "@/components/FAQSection";
+import InstagramResults from "@/components/sections/InstagramResults";
+
 export default function Home() {
   return (
     <main>
       <HeroSection />
       <PrizeShowcase />
-      <VideoShowcase />
+      <InstagramResults />
+      {/* <VideoShowcase /> */}
       <TestimonialsSection />
       <FAQSection />
     </main>
