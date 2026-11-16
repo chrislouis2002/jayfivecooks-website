@@ -1,3 +1,5 @@
+
+
 "use client";
 
 
@@ -17,124 +19,150 @@ export default function MasterclassSection() {
   return (
     <section
       id="masterclass"
-      className="w-full bg-white px-3 py-10 sm:px-6 sm:py-16"
+      className="relative w-full overflow-hidden px-4 py-5 sm:px-6 sm:py-8 lg:px-8"
     >
-      <div className="mx-auto max-w-5xl overflow-hidden rounded-[28px] bg-[#171219] px-5 py-8 text-white shadow-2xl sm:rounded-[40px] sm:px-10 sm:py-12 md:px-14 md:py-14">
+      <div className="relative mx-auto max-w-7xl overflow-hidden rounded-[24px] bg-[#171219] text-white shadow-xl sm:rounded-[32px]">
 
 
-        {/* Main heading */}
-        <h2 className="mx-auto mb-6 max-w-4xl text-3xl font-bold leading-[1.12] tracking-tight text-[#F4A9CF] sm:text-4xl md:text-5xl">
-          Learn AI Video Creation, Professional Editing &amp; Digital Product
-          Creation — All in One Masterclass.
-        </h2>
+        {/* Decorative background */}
+        <div className="pointer-events-none absolute -right-32 -top-32 h-80 w-80 rounded-full bg-[#E98EAB]/10 blur-[100px]" />
 
 
-        {/* Masterclass image */}
-        <div className="relative mb-7 aspect-[16/9] w-full overflow-hidden rounded-[22px] sm:rounded-[30px]">
-          <Image
-            src="/img/master-class.png"
-            alt="AI video creation and editing masterclass creative studio"
-            fill
-            priority
-            sizes="(max-width: 768px) 100vw, 900px"
-            className="object-cover"
-          />
-        </div>
+        <div className="relative grid items-center gap-7 p-5 sm:gap-9 sm:p-8 md:p-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12 lg:p-12">
 
 
-        {/* Introduction */}
-        <div className="mb-7">
-          <h3 className="mb-4 text-2xl font-bold leading-tight sm:text-3xl md:text-4xl">
-            You don&apos;t need to be a professional. You don&apos;t even need
-            experience.
-          </h3>
+          {/* LEFT CONTENT */}
+          <div className="flex flex-col">
 
 
-          <p className="text-base leading-relaxed text-white/85 sm:text-xl md:text-2xl">
-            Whether you&apos;re a complete beginner, content creator, aspiring
-            digital entrepreneur or someone looking for a valuable skill to
-            earn from, this masterclass will walk you through the process, step
-            by step.
-          </p>
-        </div>
+            {/* <span className="mb-3 inline-flex w-fit items-center rounded-full border border-[#F4A9CF]/30 bg-[#F4A9CF]/10 px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.18em] text-[#F4A9CF] sm:text-xs">
+              ✦ JAYFIVECOOKS MASTERCLASS
+            </span> */}
 
 
-        {/* Learning outcomes */}
-        <div className="mb-8 rounded-[24px] bg-[#2B202D] px-5 py-6 sm:px-8 sm:py-7">
-          <h3 className="mb-5 text-xl font-bold leading-snug text-[#F4A9CF] sm:text-2xl">
-            INSIDE THIS MASTERCLASS, YOU&apos;LL LEARN HOW TO:
-          </h3>
+            <h2 className="max-w-2xl text-3xl font-extrabold leading-[1.12] tracking-tight sm:text-4xl md:text-5xl xl:text-[54px]">
+              Master the Art of{" "}
+              <span className="text-[#F4A9CF]">
+                AI Video Creation
+              </span>
+              , Editing & Digital Products.
+            </h2>
 
 
-          <ul className="space-y-4">
-            {learningOutcomes.map((outcome) => (
-              <li key={outcome} className="flex items-start gap-3 sm:gap-4">
-                <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border-2 border-[#F4A9CF] text-sm font-bold text-[#F4A9CF]">
-                  ✓
-                </span>
-                <span className="text-base leading-relaxed text-white/95 sm:text-xl">
-                  {outcome}
-                </span>
-              </li>
-            ))}
-          </ul>
-        </div>
+            <p className="mt-4 max-w-xl text-sm leading-relaxed text-white/75 sm:text-base md:text-lg">
+              You don't need previous experience. Learn how to create
+              cinematic AI videos, edit professionally and build
+              digital products you can monetize.
+            </p>
 
 
-        {/* Learning path */}
-        <div className="mx-auto mb-7 max-w-4xl text-center">
-          <h3 className="mb-4 text-3xl font-bold uppercase leading-tight tracking-wide sm:text-4xl md:text-5xl">
-            One Masterclass. Multiple Digital Skills. Endless Creative
-            Possibilities.
-          </h3>
+            {/* Learning outcomes */}
+            <div className="mt-6">
+              <h3 className="mb-4 text-xs font-bold uppercase tracking-widest text-[#F4A9CF] sm:text-sm">
+                What you'll learn
+              </h3>
 
 
-          <p className="text-base leading-relaxed text-white/85 sm:text-xl">
-            Learn at your own pace with our 7-day learning path. Get lifetime
-            access to your lessons, plus access to our WhatsApp and Telegram
-            learning communities.
-          </p>
-        </div>
+              <div className="grid gap-3 sm:grid-cols-2">
+                {learningOutcomes.map((outcome) => (
+                  <div
+                    key={outcome}
+                    className="flex items-start gap-2.5"
+                  >
+                    <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#F4A9CF]/15 text-xs font-bold text-[#F4A9CF]">
+                      ✓
+                    </span>
 
 
-        {/* Price card */}
-        <a
-          href="https://nestuge.com/wn_wzs-xh"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group mb-8 block rounded-[24px] bg-[#F3ADD0] px-5 py-7 text-center text-[#211520] transition duration-300 hover:-translate-y-1 hover:bg-[#F7BEDA] hover:shadow-[0_12px_40px_rgba(243,173,208,0.2)] sm:rounded-[30px] sm:py-9"
-        >
-          <span className="block text-2xl font-bold uppercase sm:text-3xl">
-            Join the Masterclass
-          </span>
+                    <span className="text-xs leading-relaxed text-white/90 sm:text-sm">
+                      {outcome}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
 
 
-          <span className="my-2 block text-5xl font-extrabold tracking-tight sm:text-6xl md:text-7xl">
-            ₦35,000
-          </span>
+            {/* CTA */}
+            <div className="mt-7 flex flex-col gap-4 sm:flex-row sm:items-center">
 
 
-          <span className="block text-base sm:text-xl">
-            Early-bird price · Regular price{" "}
-            <span className="line-through">₦45,000</span>
-          </span>
+              <a
+                href="https://nestuge.com/wn_wzs-xh"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-[#F3ADD0] px-7 py-3.5 text-sm font-bold text-[#211520] shadow-lg shadow-pink-500/10 transition-all duration-300 hover:-translate-y-1 hover:bg-[#F7BEDA] hover:shadow-pink-500/20 sm:text-base"
+              >
+                Enrol for our course
+                <span>↗</span>
+              </a>
 
 
-          <span className="mt-4 inline-block rounded-full bg-[#171219] px-6 py-2 text-sm font-semibold text-white transition group-hover:bg-[#3B2638] sm:text-base">
-            Enrol now ↗
-          </span>
-        </a>
+              {/* <div>
+                <div className="flex items-center gap-2">
+                  <span className="text-2xl font-extrabold text-white sm:text-3xl">
+                    ₦35,000
+                  </span>
+                  <span className="text-sm text-white/40 line-through">
+                    ₦45,000
+                  </span>
+                </div>
 
 
-        {/* Bottom details */}
-        <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-center text-sm font-semibold uppercase tracking-wide text-[#F4A9CF] sm:text-base">
-          <span>7-Day Learning Path</span>
-          <span className="hidden sm:inline">·</span>
-          <span>Lifetime Access</span>
-          <span className="hidden sm:inline">·</span>
-          <span>Beginner Friendly</span>
+                <p className="text-[11px] text-white/55">
+                  Limited early-bird pricing
+                </p>
+              </div> */}
+            </div>
+
+
+            {/* Benefits */}
+            <div className="mt-6 flex flex-wrap gap-x-4 gap-y-2 border-t border-white/10 pt-5 text-[10px] font-semibold uppercase tracking-wider text-[#F4A9CF] sm:text-xs">
+              <span>7-Day Learning Path</span>
+              <span>Lifetime Access</span>
+              <span>Beginner Friendly</span>
+            </div>
+          </div>
+
+
+          {/* RIGHT IMAGE */}
+          <div className="relative mx-auto w-full max-w-[520px] lg:max-w-none">
+
+
+            <div className="relative aspect-[5/4] w-full overflow-hidden rounded-[20px] border border-white/10 bg-[#2B202D] sm:rounded-[28px]">
+
+
+              <Image
+                src="/img/masterclass.jpg"
+                alt="JAYFIVECOOKS AI video creation and editing masterclass"
+                fill
+                priority
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 85vw, 45vw"
+                className="object-cover object-center transition-transform duration-700 hover:scale-[1.03]"
+              />
+
+
+              <div className="absolute inset-0 bg-gradient-to-t from-[#171219]/50 via-transparent to-transparent" />
+
+
+              <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6">
+                <div className="inline-flex rounded-full border border-white/20 bg-black/30 px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest text-white backdrop-blur-md sm:text-xs">
+                  Learn · Create · Monetize
+                </div>
+              </div>
+            </div>
+
+
+            {/* Image caption */}
+            <p className="mt-3 text-center text-xs text-white/45 sm:text-sm">
+              Your journey into the world of AI creativity starts here.
+            </p>
+          </div>
+
+
         </div>
       </div>
     </section>
   );
 }
+

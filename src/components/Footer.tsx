@@ -7,7 +7,7 @@ import { Container } from "@/components/Container";
 
 export function Footer() {
   // REPLACE THESE WITH HER REAL DETAILS
-  const whatsappNumber = "234XXXXXXXXXX";
+  const whatsappNumber = "2347070951648";
   const instagramUrl = "https://instagram.com/YOUR_USERNAME";
   const tiktokUrl = "https://tiktok.com/@YOUR_USERNAME";
 
@@ -60,10 +60,10 @@ export function Footer() {
 
 
               <a
-                href="https://wa.me/2348124581257"
+                href="https://wa.me/2347070951648"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-6 inline-flex items-center gap-3 border border-[#EBAFC5]/40 bg-[#EBAFC5] px-6 py-4 text-xs font-bold uppercase tracking-wider text-[#542638] transition-all duration-300 hover:bg-white hover:border-white"
+                className="mt-6 inline-flex items-center gap-3 rounded-full border border-[#EBAFC5]/40 bg-[#EBAFC5] px-6 py-4 text-xs font-bold uppercase tracking-wider text-[#542638] transition-all duration-300 hover:bg-white hover:border-white"
               >
                 {/* WhatsApp icon */}
                 <svg
@@ -82,8 +82,30 @@ export function Footer() {
 
 
               <p className="mt-3 text-xs text-white/40">
-                +234 812 458 1257
+                +234 707 095 1648
               </p>
+
+              <div className="mt-8 flex">
+          <a
+            href="https://www.instagram.com/jayfivecooks?rpxt=ZHFoYzhieXB1aTRu"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-5 py-3 text-xs font-medium text-[#EBAFC5] transition-all duration-300 hover:border-[#EBAFC5]/50 hover:bg-white/10"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.7"
+              className="h-4 w-4"
+            >
+              <rect x="3" y="3" width="18" height="18" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.5" cy="6.5" r="0.7" fill="currentColor" />
+            </svg>
+            Follow on Instagram @jayfivecooks ↗
+          </a>
+        </div>
             </div>
 
 
@@ -133,9 +155,31 @@ export function Footer() {
                 </a>
 
 
+                {/* Facebook */}
+                
+
+<a
+  href="https://www.facebook.com/share/194LQWfJ1x/?mibextid=wwXIfr"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Facebook"
+  className="flex h-12 w-12 items-center justify-center border border-white/15 text-white/70 transition-all duration-300 hover:border-[#EBAFC5] hover:bg-[#EBAFC5] hover:text-[#542638]"
+>
+  <svg
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    className="h-5 w-5"
+    aria-hidden="true"
+  >
+    <path d="M13.5 21v-8.2h2.76l.41-3.2H13.5V7.56c0-.93.26-1.56 1.6-1.56h1.7V3.14C16.5 3.05 15.43 3 14.18 3c-2.6 0-4.38 1.59-4.38 4.5v2.1H7v3.2h2.8V21h3.7Z" />
+  </svg>
+</a>
+
+
+
                 {/* WhatsApp */}
                 <a
-                  href= "https://wa.me/2348124581257"
+                  href= "https://wa.me/2347070951648"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="WhatsApp"

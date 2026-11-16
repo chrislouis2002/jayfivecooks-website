@@ -74,7 +74,7 @@ export function FAQSection() {
 
 
           <a
-            href="#contact"
+            href="https://wa.me/2347070951648"
             className="mt-8 inline-flex items-center gap-3 rounded-full bg-[#542638] px-7 py-4 text-xs font-semibold uppercase tracking-wider text-white transition-all duration-300 hover:bg-[#d987a5]"
           >
             Ask a question
