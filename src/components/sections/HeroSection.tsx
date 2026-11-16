@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import MasterClassSection from "@/components/sections/MasterClassSection";
+import MasterclassSection from "@/components/sections/MasterclassSection";
 
 export function HeroSection() {
   return (
@@ -24,7 +24,7 @@ export function HeroSection() {
         {/* Hero introduction */}
         
         <div className="relative mx-auto max-w-6xl px-7 pb-16 pt-20 sm:px-10 sm:pt-24">
-<MasterClassSection />
+<MasterclassSection />
           <div className="pointer-events-none absolute -right-40 top-20 h-[500px] w-[500px] rounded-full bg-[#8b526b]/10 blur-[130px]" />
 
 

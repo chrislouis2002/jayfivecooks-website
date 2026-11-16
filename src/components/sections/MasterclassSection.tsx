@@ -50,7 +50,7 @@ export default function MasterclassSection() {
 
 
             <p className="mt-4 max-w-xl text-sm leading-relaxed text-white/75 sm:text-base md:text-lg">
-              You don't need previous experience. Learn how to create
+              You don&apos;t need previous experience. Learn how to create
               cinematic AI videos, edit professionally and build
               digital products you can monetize.
             </p>
@@ -59,7 +59,7 @@ export default function MasterclassSection() {
             {/* Learning outcomes */}
             <div className="mt-6">
               <h3 className="mb-4 text-xs font-bold uppercase tracking-widest text-[#F4A9CF] sm:text-sm">
-                What you'll learn
+                What you&apos;ll learn
               </h3>
 
 
