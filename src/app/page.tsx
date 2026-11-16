@@ -4,6 +4,7 @@ import { PrizeShowcase } from "@/components/sections/PrizeShowcase";
 import { TestimonialsSection } from "@/components/sections/TestimonialSection";
 import FAQSection from "@/components/FAQSection";
 import InstagramResults from "@/components/sections/InstagramResults";
+import MasterClassSection from "@/components/sections/MasterClassSection";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <InstagramResults />
       {/* <VideoShowcase /> */}
       <TestimonialsSection />
+      <MasterClassSection />
       <FAQSection />
     </main>
   );

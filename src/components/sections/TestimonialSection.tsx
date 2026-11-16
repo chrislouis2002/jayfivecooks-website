@@ -273,7 +273,7 @@ export function TestimonialsSection() {
 
             <div className="mt-3 flex items-center justify-center gap-4">
               <span className="text-lg text-white/40 line-through decoration-2">
-                ₦50,000
+                ₦45,000
               </span>
 
 
