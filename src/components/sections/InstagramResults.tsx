@@ -97,7 +97,7 @@ export function InstagramResults() {
 
         <div className="mt-8 flex justify-center">
           <a
-            href="https://www.instagram.com/YOUR_USERNAME/"
+            href="https://www.instagram.com/jayfivecooks?rpxt=ZHFoYzhieXB1aTRu"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-5 py-3 text-xs font-medium text-[#EBAFC5] transition-all duration-300 hover:border-[#EBAFC5]/50 hover:bg-white/10"

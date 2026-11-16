@@ -153,7 +153,7 @@ export function HeroSection() {
       {/* Fixed mobile enrolment button */}
       <div className="fixed inset-x-0 bottom-0 z-50 border-t border-white/15 bg-[#100d10]/95 px-4 py-4 backdrop-blur-md md:hidden">
         <Link
-          href="#courses"
+          href="https://nestuge.com/wn_wzs-xh"
           className="flex min-h-[64px] w-full items-center justify-center bg-[#efb2ca] px-5 text-center text-sm font-bold tracking-[0.12em] text-[#21151b]"
         >
           ENROL FOR THE MASTERCLASS ↗

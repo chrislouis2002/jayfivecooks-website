@@ -9,7 +9,7 @@ const prizes = [
     number: "02",
     name: "Blender",
     description: "A little something for your kitchen.",
-    image: "/img/prizes/blender.png",
+    image: "/img/prizes/blenders.jpg",
   },
   {
     number: "03",
@@ -21,7 +21,7 @@ const prizes = [
     number: "04",
     name: "Tripods",
     description: "For your next creative production.",
-    image: "/img/prizes/tripod.png",
+    image: "/img/prizes/tripods.jpg",
   },
   {
     number: "05",
